@@ -6,7 +6,7 @@
 
     <groupId>de.sg-o.app</groupId>
     <artifactId>miioMapClient</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.1.2-SNAPSHOT</version>
 
     <name>miIO Vacuum Map Client</name>
     <description>A client that allows access to the Rockrobo vacuums map</description>
