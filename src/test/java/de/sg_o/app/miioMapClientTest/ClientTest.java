@@ -134,14 +134,13 @@ public class ClientTest {
     @Test
     public void getPreviousMapTest() throws Exception {
         assertTrue(c0.authenticate());
-        assertEquals("de.sg_o.app.miioMapServer.VacuumMap{map=width:1024; height:1024, pathEntries=4598, boundingBox=java.awt.Rectangle[x=460,y=409,width=90,height=118], overSample=1}", c0.getPrevious().toString());
+        assertEquals("de.sg_o.app.miioMapServer.VacuumMap{map=width:1024; height:1024, pathEntries=4598, boundingBox=[460, 409, 90, 118], overSample=1}", c0.getPrevious().toString());
     }
 
     @Test
     public void getOldMapTest() throws Exception {
         assertTrue(c0.authenticate());
         VacuumMap old = c0.getOld("000143.20180604001001609_1387101062713_2018032100REL");
-        assertEquals("de.sg_o.app.miioMapServer.VacuumMap{map=width:1024; height:1024, pathEntries=4831, boundingBox=java.awt.Rectangle[x=442,y=450,width=133,height=117], overSample=1}", old.toString());
-
+        assertEquals("de.sg_o.app.miioMapServer.VacuumMap{map=width:1024; height:1024, pathEntries=4831, boundingBox=[442, 450, 133, 117], overSample=1}", old.toString());
     }
 }
