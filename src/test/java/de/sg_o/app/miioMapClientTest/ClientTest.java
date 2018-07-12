@@ -29,7 +29,7 @@ public class ClientTest {
         File oldMap = new File(Objects.requireNonNull(classLoader.getResource("mnt/data/rockrobo/rrlog")).getFile());
 
         File token = new File(Objects.requireNonNull(classLoader.getResource("mnt/data/miio/device.token")).getFile());
-        s0 = new Server(currentMap, oldMap, 2000, token, Level.ALL, null);
+        s0 = new Server(currentMap, oldMap, 2000, 10000, 10, token, Level.ALL, null);
 
         new Thread(s0).start();
     }
